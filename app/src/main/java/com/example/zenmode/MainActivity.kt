@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         binding.minutePicker.setFormatter { String.format("%02d", it) }
         binding.minutePicker.wrapSelectorWheel = true
         // AM/PM Picker
+
         binding.amPmPicker.maxValue = 0
         binding.amPmPicker.maxValue = 1
         binding.amPmPicker.displayedValues = arrayOf("AM", "PM")
