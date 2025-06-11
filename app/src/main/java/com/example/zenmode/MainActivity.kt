@@ -51,6 +51,7 @@ binding.startButton.setOnClickListener{
     val intent = Intent(this, Lock::class.java)
     intent.putExtra("UNLOCK_TIME", unlockTime)
     startActivity(intent)
+mjj
 }
 
     }
