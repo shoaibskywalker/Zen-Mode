@@ -24,15 +24,13 @@ class MainActivity : AppCompatActivity() {
         binding.hourPicker.minValue = 1
         binding.hourPicker.maxValue = 12
         binding.hourPicker.wrapSelectorWheel = true
-
         // Minute Picker (0 to 59)
         binding.minutePicker.minValue = 0
         binding.minutePicker.maxValue = 59
         binding.minutePicker.setFormatter { String.format("%02d", it) }
         binding.minutePicker.wrapSelectorWheel = true
-
         // AM/PM Picker
-        binding.amPmPicker.minValue = 0
+        binding.amPmPicker.maxValue = 0
         binding.amPmPicker.maxValue = 1
         binding.amPmPicker.displayedValues = arrayOf("AM", "PM")
         binding.datePicker.minDate = System.currentTimeMillis()
@@ -47,7 +45,6 @@ binding.startButton.setOnClickListener{
     val calendar = java.util.Calendar.getInstance()
     calendar.set(year, month, day, hour, minute, 0)
     val unlockTime = calendar.timeInMillis
-
     val intent = Intent(this, Lock::class.java)
     intent.putExtra("UNLOCK_TIME", unlockTime)
     startActivity(intent)
