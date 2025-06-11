@@ -49,6 +49,5 @@ binding.startButton.setOnClickListener{
     intent.putExtra("UNLOCK_TIME", unlockTime)
     startActivity(intent)
 }
-
     }
 }
