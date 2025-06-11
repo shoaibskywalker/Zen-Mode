@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding.minutePicker.wrapSelectorWheel = true
 
         // AM/PM Picker
-        binding.amPmPicker.minValue = 0
+        binding.amPmPicker.minValue = 5
         binding.amPmPicker.maxValue = 1
         binding.amPmPicker.displayedValues = arrayOf("AM", "PM")
         binding.datePicker.minDate = System.currentTimeMillis()
